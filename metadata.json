@@ -1,0 +1,6 @@
+{
+  "name": "MTC Stream Control",
+  "description": "Plataforma clara, organizada y elegante para el control y gestión de cuentas de streaming adquiridas a proveedores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
