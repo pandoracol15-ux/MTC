@@ -4,7 +4,29 @@ Sistema web claro, organizado y elegante para la gestión y control de cuentas d
 
 ---
 
-## 🚀 Despliegue en GitHub Pages
+## 🚀 Despliegue en Render
+
+El proyecto incluye el comando `npm start` con un servidor Express de producción (`server.js`) y un archivo `render.yaml` listo para desplegar en [Render.com](https://render.com/).
+
+### Pasos para desplegar en Render:
+
+1. Inicia sesión en [dashboard.render.com](https://dashboard.render.com/).
+2. Haz clic en **New +** y selecciona **Web Service**.
+3. Conecta tu repositorio de GitHub (`mtc-stream-control`).
+4. Configura los siguientes campos:
+   - **Name**: `mtc-stream-control`
+   - **Environment / Runtime**: `Node`
+   - **Build Command**: `npm install && npm run build`
+   - **Start Command**: `npm start`
+   - **Plan**: `Free`
+5. Haz clic en **Deploy Web Service** (o **Create Web Service**).
+6. Render compilará tu aplicación y te asignará una URL pública (ejemplo: `https://mtc-stream-control.onrender.com`).
+
+*(Alternativamente, también puedes desplegarlo como **Static Site** en Render con Build Command: `npm run build` y Publish Directory: `dist`)*
+
+---
+
+## 🌐 Despliegue en GitHub Pages
 
 El proyecto ya está configurado con **GitHub Actions** para compilarse y publicarse automáticamente en GitHub Pages cada vez que subas cambios a la rama `main` o `master`.
 
